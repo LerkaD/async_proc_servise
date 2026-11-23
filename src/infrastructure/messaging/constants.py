@@ -1,0 +1,14 @@
+PAYMENTS_EXCHANGE_NAME = "payments"
+PAYMENTS_ROUTING_KEY = "payments.new"
+DLX_EXCHANGE_NAME = "payments.dlx"
+DLQ_QUEUE_NAME = "payments.dlq"
+DLQ_ROUTING_KEY = "payments.dlq"
+RETRY_QUEUE_PREFIX = "payments.retry"
+
+HEADER_ATTEMPT = "x-attempt"
+HEADER_PROCESSING_TOKEN = "x-processing-token"
+
+CONSUMER_MAX_ATTEMPTS = 3
+CONSUMER_PREFETCH = 10
+RETRY_BASE_SECONDS = 2.0
+RETRY_MAX_SECONDS = 60.0
